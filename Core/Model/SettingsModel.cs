@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Twiforked.Core.ViewModel
+namespace Twiforked.Core.Model
 {
-	class SettingsViewModel
+	class SettingsModel
 	{
 	}
 }
