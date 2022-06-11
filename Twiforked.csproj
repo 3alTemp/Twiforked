@@ -57,6 +57,8 @@
     </ApplicationDefinition>
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="Core\MainViewModel.cs" />
+    <Compile Include="Core\Model\SettingsModel.cs" />
     <Compile Include="Core\View\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
@@ -136,9 +138,6 @@
   <ItemGroup>
     <Resource Include="Images\Brand\world.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\Model\" />
-    <Folder Include="Core\ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
