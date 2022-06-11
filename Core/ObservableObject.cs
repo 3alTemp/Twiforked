@@ -1,8 +1,11 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-class ObservableObject : INotifyPropertyChanged
+namespace Twiforked.Core
 {
-	public event PropertyChangedEventHandler PropertyChanged;
-	protected void OnPropertyChanged([CallerMemberName] string name = null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+	class ObservableObject : INotifyPropertyChanged
+	{
+		public event PropertyChangedEventHandler PropertyChanged;
+		protected void OnPropertyChanged([CallerMemberName] string name = null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+	}
 }
