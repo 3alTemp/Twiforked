@@ -41,10 +41,10 @@
         <Border Background="#1f1921" Grid.ColumnSpan="3" Grid.Row="4" HorizontalAlignment="Left" Width="325"/>
         <Border Background="#261d28" Grid.ColumnSpan="3" MouseDown="Border_MouseDown"/>
 
-        <Label x:Name="Title" Content="About" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Stretch" Foreground="#ac94d3" FontFamily="Files/Fonts/KdamThmorPro-Regular.ttf" FontWeight="Bold" Margin="0,2,0,0"/>
+        <Label x:Name="WindowTitle" Content="About" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Stretch" Foreground="#ac94d3" FontFamily="Files/Fonts/KdamThmorPro-Regular.ttf" FontWeight="Bold" Margin="0,2,0,0"/>
 
         <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Stretch">
-            <Button Click="Close_Click" x:Name="Close" Content="X" VerticalAlignment="Stretch" Background="#141114" Foreground="#ac94d3" BorderThickness="0" Margin="0,0,5,0" Width="15"/>
+            <Button Click="Close_Click" x:Name="CloseButton" Content="X" VerticalAlignment="Stretch" Background="#141114" Foreground="#ac94d3" BorderThickness="0" Margin="0,0,5,0" Width="15"/>
         </StackPanel>
 
         <Grid Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10">
