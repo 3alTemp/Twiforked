@@ -108,7 +108,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Fonts\NuosuSIL-Regular.ttf" />
+    <Resource Include="Fonts\NuosuSIL\NuosuSIL-Regular.ttf" />
+    <Resource Include="Fonts\Roboto\Roboto-Regular.ttf" />
+    <Resource Include="Fonts\LibreFranklin\LibreFranklin-Light.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,6 +140,20 @@
   <ItemGroup>
     <Resource Include="Images\Brand\world.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Fonts\Roboto\LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\Other\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\LibreFranklin\OFL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\NuosuSIL\OFL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\README.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
