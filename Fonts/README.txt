@@ -1,0 +1,1 @@
+﻿The included fonts and their respective licenses have been downloaded from Google Fonts (https://fonts.google.com)
