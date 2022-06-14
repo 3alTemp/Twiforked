@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 using System.Windows.Input;
 
 namespace Twiforked
@@ -16,13 +17,18 @@ namespace Twiforked
 				DragMove();
 		}
 
+		// Generic functions
 		private void Minimize_Click(object sender, RoutedEventArgs e) { WindowState = WindowState.Minimized; }
 		private void Close_Click(object sender, RoutedEventArgs e) { Application.Current.Shutdown(); }
 		private void NulFunc_Click(object sender, RoutedEventArgs e) { return; }
+
 		private void About_Click(object sender, RoutedEventArgs e)
 		{
-			// Instance and show an "AppInfo" window
-			AppInfo w = new AppInfo();
+			// Check if there's already an instance of "AppInfo" running, if not: instance
+			if (Application.Current.Windows.OfType<AppInfo>().FirstOrDefault() != null) return;
+
+			// Instance
+			var w = new AppInfo();
 			w.Owner = this;
 			w.Show();
 		}
